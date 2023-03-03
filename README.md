@@ -202,7 +202,7 @@ $ rails s -b 0.0.0.0
 
 * 修改佈景主題 app/views/layouts/application.html.erb 
 
-  `記得把 javascript_importmap_tags 註解，再新增 javascipt_include_tag "turbo"，不然刪除時部會跳出確認訊息！`
+  `記得把 javascript_importmap_tags 註解，再新增 javascipt_include_tag "turbo"，不然刪除時不會跳出確認訊息！`
 
 ```ruby
 $ vi app/views/layouts/application.html.erb
