@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+<div class="color-lg-8 mx-auto">
+  <h1>Plants</h1>
+  <%= link_to "New plant", new_plant_path, class: "btn btn-lg btn-primary mb-3" %>
+  <div id="plants">
+    <% @plants.each do |plant| %>
+      <div class="card shoadow mb-3">
+        <div class="card-body">
+          <%= render plant %>
+          <p><%= link_to "Show this plant", plant, class: "btn btn-outline-secondary" %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

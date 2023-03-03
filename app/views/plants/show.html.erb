@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+<div class="col-lg-8">
+  <div class="card shadow">
+    <div class="card-body">
+      <%= render @plant %>
+    </div>
+  </div>
+  <div class="mt-5">
+    <%= link_to "Edit this plant", edit_plant_path(@plant), class: "btn btn-warning" %>
+    <%= link_to "Back to plants", plants_path, class: "btn btn-outline-secondary" %>
+    <%= link_to 'destroy', @plant, data: { turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: 'btn btn-danger' %>
+  </div>
+</div>
